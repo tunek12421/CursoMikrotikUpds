@@ -1,0 +1,52 @@
+/* Header, Navbar, Footer, Buttons, Cards, etc. */
+
+.top-header {
+    background-color: #34495e;
+    color: white;
+    padding: 8px 0;
+    font-size: 0.85rem;
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.social-icon:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* ...continúa con el resto de componentes... */
