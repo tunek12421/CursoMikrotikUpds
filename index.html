@@ -2,6 +2,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <style>
+    .social-btn {
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+    .social-btn.facebook { background: #1877f2; }
+    .social-btn.facebook:hover { background: #145db2; transform: translateY(-2px) scale(1.04); }
+    .social-btn.linkedin { background: #0a66c2; }
+    .social-btn.linkedin:hover { background: #084a8c; transform: translateY(-2px) scale(1.04); }
+    .social-btn.whatsapp { background: #25d366; }
+    .social-btn.whatsapp:hover { background: #1da851; transform: translateY(-2px) scale(1.04); }
+    @media (max-width: 700px) {
+      .social-btn { width: 100%; justify-content: center; }
+    }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTCNA - Curso de Certificación MikroTik Certified Network Associate</title>
@@ -36,11 +60,18 @@
                     <h2 style="font-size: 2rem; margin: 0 0 2rem 0; font-weight: 300; line-height: 1.2;">MikroTik Certified Network Associate</h2>
                     <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem; max-width: 600px;">¡Inscríbete hoy mismo en el curso MTCNA de MikroTik y conviértete en un experto en redes! Aprenderás a configurar redes con RouterOS y mejorarás tus habilidades en el manejo de routers y switches. ¡No pierdas la oportunidad de avanzar en tu carrera profesional!</p>
                     <div style="margin-bottom: 1.5rem;"><span style="font-size: 1rem;">Comparte la información de este curso</span></div>
-                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <a href="https://www.facebook.com/UniversidadUPDS/" target="_blank" style="background: #1877f2; color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">Facebook</a>
-                        <a href="https://linkedin.com/company/upds" target="_blank" style="background: #0a66c2; color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">LinkedIn</a>
-                        <a href="https://wa.me/59161681770" target="_blank" style="background: #25d366; color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">WhatsApp</a>
-                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Botones de redes sociales visibles -->
+    <div class="container" style="margin-top: 1.5rem;">
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="https://www.facebook.com/UniversidadUPDS/" target="_blank" class="social-btn facebook">Facebook</a>
+            <a href="https://linkedin.com/company/upds" target="_blank" class="social-btn linkedin">LinkedIn</a>
+            <a href="https://wa.me/59161681770" target="_blank" class="social-btn whatsapp">WhatsApp</a>
+        </div>
                 </div>
                 <div style="background: white; color: #333; padding: 2rem; border-radius: 10px; min-width: 300px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
                     <div style="text-align: center; margin-bottom: 1.5rem;">
