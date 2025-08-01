@@ -1,0 +1,38 @@
+/* Estilos para la sección de capítulos */
+.content-section {
+    padding: 3rem 2rem;
+}
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #02193f;
+    padding-bottom: 0.5rem;
+}
+.objectives {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    border-left: 5px solid #02193f;
+    border: 1px solid #e9ecef;
+}
+.chapter {
+    background: white;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.chapter-header {
+    background: linear-gradient(135deg, #02193f, #0097a7);
+    color: white;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.chapter-content {
+    padding: 1.5rem;
+    color: #666;
+    line-height: 1.7;
+}

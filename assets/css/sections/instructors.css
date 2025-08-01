@@ -1,0 +1,51 @@
+/* Estilos para la sección de instructores */
+.instructors-section {
+    padding: 3rem 2rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e9ecef;
+}
+.instructors-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.instructors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+.instructor-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.instructor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.instructor-info h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+.instructor-info ul {
+    list-style: none;
+    font-size: 0.9rem;
+    color: #666;
+}
+.instructor-info li {
+    margin-bottom: 0.3rem;
+}
+.instructor-info li:before {
+    content: "• ";
+    color: #02193f;
+    font-weight: bold;
+}

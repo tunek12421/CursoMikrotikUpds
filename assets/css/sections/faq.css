@@ -1,0 +1,39 @@
+/* Estilos para la sección de preguntas frecuentes */
+.faq-section {
+    padding: 3rem 2rem;
+    background: white;
+}
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.faq-question {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+}
+.faq-question:hover {
+    background: #e9ecef;
+}
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+.faq-question.active::after {
+    transform: rotate(45deg);
+}
+.faq-answer {
+    padding: 1.5rem;
+    color: #666;
+    line-height: 1.7;
+    display: none;
+}

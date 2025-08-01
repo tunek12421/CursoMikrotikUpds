@@ -1,0 +1,61 @@
+/* Estilos para la sección de conocimientos esenciales (prerequisitos) */
+.prerequisites-section {
+    margin: 2rem 0;
+}
+.prerequisites-section .section-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid #02193f;
+    padding-bottom: 0.5rem;
+}
+.prerequisites-box {
+    background: #fff3e0;
+    border-left: 6px solid #ff9800;
+    border-radius: 12px;
+    padding: 2rem 2rem 2.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: none;
+}
+.prerequisites-box p {
+    font-size: 1.1rem;
+    color: #263238;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.prerequisites-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.prereq-link {
+    background: #ff9800;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(255,152,0,0.13);
+    transition: background 0.2s, transform 0.2s;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.prereq-link:hover {
+    background: #fb8c00;
+    transform: translateY(-2px) scale(1.04);
+}
+@media (max-width: 700px) {
+    .prerequisites-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .prereq-link {
+        width: 100%;
+    }
+}
