@@ -1,3 +1,15 @@
+.footer-bottom-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    box-sizing: border-box;
+}
+
 /* Iconos sociales en el footer */
 .footer-social {
     position: absolute;
@@ -7,18 +19,7 @@
     gap: 1.2rem;
     z-index: 10;
 }
-.footer-social a {
-    color: #bbb;
-    font-size: 1.5rem;
-    transition: color 0.2s, transform 0.2s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer-social a.facebook:hover { color: #1877f2; transform: scale(1.2); }
-.footer-social a.linkedin:hover { color: #0a66c2; transform: scale(1.2); }
-.footer-social a.whatsapp:hover { color: #25d366; transform: scale(1.2); }
-/* Estilos para el footer */
+/* Fondo original del footer superior restaurado */
 .footer {
     background: #333;
     color: #fff;
@@ -32,7 +33,7 @@
 }
 .footer-section h3 {
     margin-bottom: 1rem;
-    color: #fff;
+    /* padding-bottom eliminado porque el footer ya no es fijo */
 }
 .footer-section ul {
     list-style: none;
@@ -47,28 +48,112 @@
 .footer-section ul li a:hover {
     color: #fff;
 }
-.footer-bottom {
-    border-top: 1px solid #555;
-    padding-top: 1rem;
-    text-align: center;
-    color: #fff;
+/* --- Sticky footer: body y html deben ocupar toda la altura --- */
+
+
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
 }
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* padding-bottom eliminado porque el footer ya no es fijo */
+}
+
+
+main {
+    flex: 1 0 auto;
+}
+
+
+.footer-bottom {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    border-top: 1px solid #222;
+    padding: 1.1rem 0 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    background: #10141a;
+    color: #b8b29a;
+    box-sizing: border-box;
+    z-index: 20;
+    min-height: 60px;
+    flex-shrink: 0;
+    margin-bottom: 0 !important;
+}
+
+
+
+/* Sticky footer: el fondo oscuro solo en .footer-bottom, no en toda la página */
+
+
+/* Íconos sociales Font Awesome */
+.footer-social-fa {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.footer-social-fa a {
+    color: #b8b29a;
+    font-size: 1.5rem;
+    transition: color 0.2s, transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-social-fa a:hover {
+    color: #2196f3;
+    transform: scale(1.18);
+}
+.footer-bottom p {
+    color: #b8b29a;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Botón azul grande en el footer */
 .footer-section .btn {
-    background: #3578e5;
+    background: #3586ea;
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1.4rem;
     border: none;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s, transform 0.2s;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
     margin-top: 1rem;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 2px 8px rgba(216,67,42,0.13);
+    box-shadow: 0 2px 8px rgba(33,150,243,0.13);
+    letter-spacing: 0.5px;
+    text-align: center;
 }
 .footer-section .btn:hover {
-    background: #285bb5;
+    background: #2176d6;
     transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 20px rgba(33,150,243,0.18);
 }
