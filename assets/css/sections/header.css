@@ -33,6 +33,17 @@
     text-transform: none;
     align-items: center;
 }
+.upds-contact-link {
+    color: #1a3785;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+    cursor: pointer;
+    display: inline-block;
+}
+.upds-contact-link:hover {
+    color: #e0e0e0;
+    transform: translateY(-3px);
+}
 .upds-header-logo-right {
     flex: 0 0 auto;
     display: flex;
