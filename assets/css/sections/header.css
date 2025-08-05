@@ -20,6 +20,7 @@
 .upds-logo-left {
     height: 98px;
     width: auto;
+    margin-left: 50px; /* Ajusta este valor según necesites */
 }
 .upds-header-contact {
     display: flex;
