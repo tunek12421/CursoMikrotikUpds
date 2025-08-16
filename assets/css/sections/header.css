@@ -39,14 +39,10 @@
     width: auto;
 }
 
-.upds-header-contact {
+/* Navegación en la parte superior */
+.upds-nav-top {
     display: flex;
-    gap: 25px;  /* Gap final ajustado */
-    color: #1a3785;
-    font-family: 'Segoe UI', 'Arial', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 500;
-    letter-spacing: 0.01em;
+    gap: 25px;  /* Gap entre elementos del menú */
     align-items: center;
     justify-content: center;
     flex: 1;  /* Expandir para ocupar el centro */
@@ -54,8 +50,23 @@
     padding: 0;  /* Sin padding */
 }
 
+/* Contacto ahora en la parte inferior */
+.upds-header-contact {
+    display: flex;
+    gap: 25px;  /* Gap final ajustado */
+    color: #fff;  /* Texto blanco para fondo azul */
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 0;  /* Sin padding */
+}
+
 .upds-contact-link {
-    color: #1a3785;
+    color: #fff;  /* Texto blanco para fondo azul */
     text-decoration: none;
     transition: color 0.2s;
     cursor: pointer;
@@ -64,7 +75,7 @@
 }
 
 .upds-contact-link:hover {
-    color: #0d2461;
+    color: #b3d4ff;  /* Color hover similar al de navegación */
 }
 
 .upds-header-logo-right {
@@ -94,7 +105,7 @@
 }
 
 .upds-nav-link {
-    color: #fff;
+    color: #1a3785;  /* Color azul para fondo blanco */
     font-size: 1rem;  /* Aumentado ligeramente */
     font-weight: 500;
     text-decoration: none;
@@ -105,7 +116,7 @@
 }
 
 .upds-nav-link:hover {
-    color: #b3d4ff;
+    color: #0d2461;  /* Color hover más oscuro para fondo blanco */
 }
 
 /* Media Queries para Responsividad */
@@ -114,6 +125,11 @@
         max-width: 1000px;  /* Reducido para más centrado */
         gap: 35px;  /* Gap reducido */
         padding: 0 25px;  /* Padding aumentado */
+    }
+    
+    .upds-nav-top {
+        gap: 20px;  /* Más compacto */
+        font-size: 0.9rem;
     }
     
     .upds-header-contact {
@@ -144,6 +160,12 @@
     
     .upds-logo-right {
         height: 39.5px;  /* Aumentado 0.5px para proporción */
+    }
+    
+    .upds-nav-top {
+        gap: 15px;  /* Más compacto */
+        font-size: 0.85rem;
+        padding: 0;  /* Sin padding */
     }
     
     .upds-header-contact {
@@ -186,6 +208,14 @@
     
     .upds-logo-right {
         height: 32px;
+    }
+    
+    .upds-nav-top {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0;  /* Sin padding en móvil */
     }
     
     .upds-header-contact {
