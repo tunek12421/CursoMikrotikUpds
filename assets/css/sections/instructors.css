@@ -27,9 +27,15 @@
 .instructor-avatar {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 8px;  /* Esquinas ligeramente redondeadas en lugar de circular */
     object-fit: cover;
     flex-shrink: 0;
+    filter: grayscale(100%);  /* Filtro blanco y negro */
+    transition: filter 0.3s ease;  /* Transición suave para el hover */
+}
+
+.instructor-avatar:hover {
+    filter: grayscale(0%);  /* Vuelve al color original en hover */
 }
 .instructor-info h3 {
     color: #333;

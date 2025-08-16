@@ -13,8 +13,10 @@ body {
 }
 
 .header {
-    background: #02193f;
-    color: white;
+    background: url('../images/backgroundHero.jpg') center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    color: #02193f;
     padding: 4rem 0;
     text-align: left;
     position: relative;
