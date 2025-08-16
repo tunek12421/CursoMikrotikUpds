@@ -45,6 +45,58 @@
     <link rel="stylesheet" href="assets/css/sections/faq.css">
     <link rel="stylesheet" href="assets/css/sections/newsletter.css">
     <link rel="stylesheet" href="assets/css/sections/footer.css">
+    
+    <style>
+    /* Ajustes adicionales para réplica exacta */
+    
+    /* Resetear márgenes del body si existen */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Asegurar que el header principal del curso comience correctamente */
+    .header {
+        margin-top: 0;
+    }
+    
+    .main-content {
+        margin-top: 0 !important;
+    }
+    
+    /* Ajustar logos más centrados */
+    @media (min-width: 769px) {
+        .upds-header-logo-container {
+            position: relative;
+            max-width: 1100px !important;  /* Reducido para más centrado */
+            justify-content: space-between !important;
+            padding: 0 25px !important;  /* Padding aumentado */
+        }
+    }
+    
+    @media (min-width: 1025px) {
+        .upds-header-logo-container {
+            max-width: 1150px !important;
+            padding: 0 25px !important;  /* Padding aumentado */
+        }
+    }
+    
+    /* Para pantallas estándar */
+    @media (min-width: 1366px) {
+        .upds-header-logo-container {
+            max-width: 1200px !important;
+            padding: 0 30px !important;
+        }
+    }
+    
+    /* Para pantallas grandes */
+    @media (min-width: 1600px) {
+        .upds-header-logo-container {
+            max-width: 1250px !important;
+            padding: 0 35px !important;  /* Padding aumentado para centrar */
+        }
+    }
+    </style>
 </head>
 <body>
 

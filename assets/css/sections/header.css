@@ -1,122 +1,229 @@
-/* Estilos exclusivos para el header UPDS */
+/* Estilos exclusivos para el header UPDS - Réplica Exacta */
+* {
+    box-sizing: border-box;
+}
+
 .upds-header {
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .upds-header-top {
+    background: #fff;
+    padding: 0.28rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    min-height: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    padding: 0.5rem 2rem;
-    font-size: 0.95rem;
-    border-bottom: 1px solid #e0e0e0;
 }
+
+.upds-header-logo-container {
+    width: 100%;
+    max-width: 1200px;  /* Reducido para acercar más al centro */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Cambio a space-between para extremos */
+    gap: 40px;  /* Gap reducido */
+    padding: 0 30px;  /* Padding aumentado para acercar al centro */
+}
+
 .upds-header-logo-left {
     flex: 0 0 auto;
     display: flex;
     align-items: center;
 }
+
 .upds-logo-left {
-    height: 98px;
+    height: 83px;  /* Reducido 2px de 85px a 83px */
     width: auto;
-    margin-left: 50px; /* Ajusta este valor según necesites */
 }
+
 .upds-header-contact {
     display: flex;
-    gap: 2rem;
+    gap: 25px;  /* Gap final ajustado */
     color: #1a3785;
-    font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 1.15rem;
-    font-weight: 600;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
     letter-spacing: 0.01em;
-    text-transform: none;
     align-items: center;
+    justify-content: center;
+    flex: 1;  /* Expandir para ocupar el centro */
+    white-space: nowrap;
+    padding: 0;  /* Sin padding */
 }
+
 .upds-contact-link {
     color: #1a3785;
     text-decoration: none;
-    transition: color 0.2s, transform 0.2s;
+    transition: color 0.2s;
     cursor: pointer;
     display: inline-block;
+    white-space: nowrap;
 }
+
 .upds-contact-link:hover {
-    color: #e0e0e0;
-    transform: translateY(-3px);
+    color: #0d2461;
 }
+
 .upds-header-logo-right {
     flex: 0 0 auto;
     display: flex;
     align-items: center;
 }
+
 .upds-logo-right {
-    height: 48px;
+    height: 45.5px;  /* Aumentado 0.5px de 45px a 45.5px */
     width: auto;
 }
+
 .upds-header-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #1a3785;
-    padding: 0.5rem 2rem;
+    padding: 0.64rem 0;  /* Ajustado a 0.64rem */
+    min-height: 45px;  /* Aumentado de 38px a 45px */
 }
+
 .upds-nav-bottom {
     display: flex;
-    gap: 2rem;
+    gap: 30px;  /* Espaciado entre elementos del menú */
+    align-items: center;
 }
+
 .upds-nav-link {
     color: #fff;
-    font-size: 1.15rem;
-    font-weight: 600;
+    font-size: 1rem;  /* Aumentado ligeramente */
+    font-weight: 500;
     text-decoration: none;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
     transition: color 0.2s;
     text-transform: uppercase;
+    padding: 0.4rem 0;  /* Aumentado el padding vertical */
 }
+
 .upds-nav-link:hover {
-    color: #e0e0e0;
+    color: #b3d4ff;
 }
-@media (max-width: 1100px) {
-    .upds-header-top {
-        flex-wrap: wrap;
-        gap: 1rem;
-        padding: 1rem 0.5rem;
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    .upds-header-logo-container {
+        max-width: 1000px;  /* Reducido para más centrado */
+        gap: 35px;  /* Gap reducido */
+        padding: 0 25px;  /* Padding aumentado */
     }
+    
     .upds-header-contact {
-        gap: 1rem;
+        gap: 20px;  /* Más compacto */
+        font-size: 0.9rem;
+    }
+    
+    .upds-logo-left {
+        height: 73px;  /* Reducido 2px para pantallas medianas */
+    }
+    
+    .upds-logo-right {
+        height: 41.5px;  /* Aumentado 0.5px para proporción */
+    }
+}
+
+@media (max-width: 1024px) {
+    .upds-header-logo-container {
+        max-width: 100%;
+        padding: 0 20px;  /* Padding aumentado para más centrado */
+        gap: 25px;  /* Gap reducido para tablets */
+        justify-content: space-between;  /* Mantener en extremos */
+    }
+    
+    .upds-logo-left {
+        height: 68px;  /* Reducido 2px para tablets */
+    }
+    
+    .upds-logo-right {
+        height: 39.5px;  /* Aumentado 0.5px para proporción */
+    }
+    
+    .upds-header-contact {
+        gap: 15px;  /* Más compacto */
+        font-size: 0.85rem;
+        padding: 0;  /* Sin padding */
+    }
+    
+    .upds-nav-bottom {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .upds-nav-link {
+        font-size: 0.95rem;  /* Ajustado */
+        padding: 0.3rem 0;  /* Mantener padding proporcional */
+    }
+}
+
+@media (max-width: 768px) {
+    .upds-header-top {
+        min-height: auto;
+        padding: 10px 0;
+    }
+    
+    .upds-header-bottom {
+        min-height: 42px;  /* Mantener altura mínima en móvil */
+        padding: 0.6rem 0;  /* Padding ajustado para móvil */
+    }
+    
+    .upds-header-logo-container {
+        flex-direction: column;
+        gap: 8px;  /* Mínimo */
+        padding: 10px;
+    }
+    
+    .upds-logo-left {
+        height: 55px;
+    }
+    
+    .upds-logo-right {
+        height: 32px;
+    }
+    
+    .upds-header-contact {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0;  /* Sin padding en móvil */
+    }
+    
+    .upds-nav-bottom {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 8px;  /* Mínimo */
+        padding: 8px;  /* Aumentado para mantener altura */
     }
-    .upds-header-logo-left, .upds-header-logo-right {
-        height: 36px;
-    }
-    .upds-header-logo-left, .upds-header-logo-right {
-        margin-bottom: 0.5rem;
-    }
-    .upds-nav-bottom {
-        gap: 1rem;
-        flex-wrap: wrap;
+    
+    .upds-nav-link {
+        font-size: 0.9rem;  /* Ajustado */
+        padding: 0.25rem 0.4rem;  /* Padding ajustado */
     }
 }
-@media (max-width: 700px) {
-    .upds-header-top {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+
+@media (max-width: 480px) {
+    .upds-logo-left {
+        height: 45px;
     }
-    .upds-header-contact {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.3rem;
-    }
-    .upds-header-logo-left, .upds-header-logo-right {
+    
+    .upds-logo-right {
         height: 28px;
     }
-    .upds-nav-bottom {
-        gap: 0.7rem;
-        flex-wrap: wrap;
+    
+    .upds-header-contact {
+        font-size: 0.75rem;
     }
+    
     .upds-nav-link {
-        font-size: 1rem;
+        font-size: 0.85rem;  /* Ajustado */
+        padding: 0.25rem 0.35rem;  /* Padding ajustado */
     }
 }
